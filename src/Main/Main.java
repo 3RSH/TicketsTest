@@ -101,6 +101,6 @@ public class Main {
     int hours = duration / 60;
     int minutes = duration - hours * 60;
 
-    return hours + ":" + minutes;
+    return hours + ":" + (minutes < 10 ? ("0" + minutes) : minutes);
   }
 }
